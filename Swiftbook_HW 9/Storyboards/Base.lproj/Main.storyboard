@@ -103,9 +103,9 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KvI-3W-xJx" customClass="SpringView" customModule="Spring">
                                         <rect key="frame" x="30" y="193" width="100" height="100"/>
                                         <color key="backgroundColor" systemColor="systemTealColor"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="cornerRadius" value="50"/>
-                                        </userDefinedRuntimeAttributes>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="KvI-3W-xJx" secondAttribute="height" multiplier="1:1" id="UQn-xl-nTM"/>
+                                        </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0W-Y8-0U5">
                                         <rect key="frame" x="0.0" y="343" width="160" height="30"/>
@@ -152,9 +152,7 @@
                             <constraint firstItem="7Xy-l2-B8W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RDJ-dV-bPI"/>
                             <constraint firstItem="fxC-lT-lQ4" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="U8l-oT-wLm"/>
                             <constraint firstItem="KvI-3W-xJx" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.176056" id="XVJ-G6-eYQ"/>
-                            <constraint firstItem="fxC-lT-lQ4" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.251761" id="bD2-rQ-whf"/>
                             <constraint firstItem="7Xy-l2-B8W" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bqy-Sq-xcn"/>
-                            <constraint firstItem="KvI-3W-xJx" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.3125" id="rRj-DJ-0BD"/>
                         </constraints>
                     </view>
                     <connections>

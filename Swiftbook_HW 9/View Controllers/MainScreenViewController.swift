@@ -33,6 +33,10 @@ class MainScreenViewController: UIViewController {
         durationLabel.text = "for you!"
     }
     
+    override func viewWillLayoutSubviews() {
+        animatedView.layer.cornerRadius = animatedView.frame.width / 2
+    }
+    
     // MARK: - IB Action
     @IBAction func animationButtonPressed() {
         let currentAnimation = Animation.getAnimation()
@@ -51,7 +55,9 @@ class MainScreenViewController: UIViewController {
     }
     
     @IBAction func repeatButtonPressed() {
-        setAnimation(from: initializedAnimation)
+        guard let currentAnimation = initializedAnimation else { return }
+        
+        setAnimation(from: currentAnimation)
         
         animatedView.animate()
     }
